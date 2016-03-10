@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html data-ng-app="suiviNomeApp">
+<head lang="en">
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/bootstrap/dist/css/bootstrap-theme.min.css">
+    <title>Menu Dynamic</title>
+</head>
+<body role="document">
+
+	<div data-ui-view="navbar"></div>
+	<div class="container" role="main" style="margin-top:80px">
+		<div class="container">
+			<div data-ui-view="content"></div>
+		</div>
+	</div>
+
+
+
+	<!-- Dependance générique -->
+	<script type="text/javascript" src="static/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="static/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="static/angular/angular.min.js"></script>
+	<script type="text/javascript" src="static/angular-resource/angular-resource.min.js"></script>
+	<script type="text/javascript" src="static/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script type="text/javascript" src="static/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+	<!-- Dependance Applicative -->
+	<script type="text/javascript" src="scripts/app/app.js"></script>
+	<script type="text/javascript" src="scripts/components/navbar/NavBarController.js"></script>
+	<script type="text/javascript" src="scripts/app/main/main.js"></script>
+	<script type="text/javascript" src="scripts/app/main/mainController.js"></script>
+
+	<!-- Table view -->
+	<script type="text/javascript" src="scripts/app/table/table.js"></script>
+	<script type="text/javascript" src="scripts/app/table/tableController.js"></script>
+
+	<!-- Services -->
+	<script type="text/javascript" src="scripts/components/tables/tableService.js"></script>
+	<script type="text/javascript" src="scripts/components/data/dataService.js"></script>
+
+</body>
+</html>
